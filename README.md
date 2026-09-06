@@ -1,6 +1,6 @@
-# 📈 Audio Fade — Fundidos de entrada y salida para audio
+# Audio Fade In/Out — Free Online Tool
 
-**Free Audio Fade In/Out.** Add independent fade-in and fade-out to any audio file, with duration up to the full track length and no artificial cap, powered by FFmpeg.wasm. No sign-up, no ads, 100% client-side.
+**Audio Fade In/Out.** Add a fade in and fade out to your audio, with adjustable duration. No sign-up, no ads, 100% client-side.
 
 🌐 **Demo en vivo / Live demo:** [miguelacm.es/tools/audio-fade](https://miguelacm.es/tools/audio-fade)
 
@@ -13,13 +13,9 @@
 
 ## ✨ Features
 
-- **Fade in/out independientes / Independent fade in/out:** set each duration separately
-- **Sin tope / No cap:** fade can span the entire track if needed
-- **6 formatos / 6 formats:** MP3, WAV, OGG, FLAC, M4A, AAC
-- **FFmpeg.wasm:** real audio fade processing running client-side
-- **Sin servidor / Zero server:** Everything runs in the browser — nothing is ever uploaded
-- **Embebible / Embeddable:** Use it as an iframe on any website
-- **Open source:** MIT license, use it freely
+- **🌊 Both edges:** Fade in, fade out or both, independently.
+- **⏱️ Adjustable:** Set the exact duration of each fade.
+- **🔒 100% private:** Processing runs locally with FFmpeg.wasm.
 
 ---
 
@@ -45,15 +41,13 @@ NEXT_PUBLIC_EMBED_URL=https://miguelacm.es/embed/audio-fade
 
 ## 📦 Embed on your website
 
-### Iframe (plug & play)
-
 ```html
 <iframe
   src="https://miguelacm.es/embed/audio-fade"
   width="100%"
   height="700"
   style="border:none;border-radius:12px;"
-  title="Añadir Fade In y Fade Out a Audio Online Gratis — miguelacm.es"
+  title="Audio Fade In/Out — miguelacm.es"
   loading="lazy"
 ></iframe>
 ```
@@ -62,11 +56,11 @@ NEXT_PUBLIC_EMBED_URL=https://miguelacm.es/embed/audio-fade
 
 ```html
 <a href="https://miguelacm.es/tools/audio-fade" target="_blank" rel="noopener">
-  Fade in/out de audio gratis por MACM
+  Audio Fade In/Out — free tool by MACM
 </a>
 ```
 
-> 💡 The link option generates a real backlink that benefits the project. Recommended if your platform supports custom HTML.
+> 💡 The link option generates a real backlink that benefits the project.
 
 ---
 
@@ -74,11 +68,12 @@ NEXT_PUBLIC_EMBED_URL=https://miguelacm.es/embed/audio-fade
 
 | Technology | Version | Purpose |
 |---|---|---|
-| [Next.js](https://nextjs.org) | 16 | React framework + SSG |
+| [Next.js](https://nextjs.org) | 16 | React framework |
 | [TypeScript](https://www.typescriptlang.org) | 5 | Type safety |
 | [Tailwind CSS](https://tailwindcss.com) | 4 | Styling |
 | [react-icons](https://react-icons.github.io/react-icons/) | 5 | Icons |
-| [FFmpeg.wasm](https://ffmpegwasm.netlify.app/) | 0.12 | Audio processing (WASM, in-browser) |
+| `@ffmpeg/ffmpeg` | — | Core logic |
+| `@ffmpeg/util` | — | Core logic |
 
 ---
 
